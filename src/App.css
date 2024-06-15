@@ -103,7 +103,7 @@ button.icon img.doll-icon {
 
 main {
     background-color: white;
-    width: 67%;
+    width: 60%;
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
@@ -132,27 +132,45 @@ font-size: 112%;
   
   .doll-img, .overlay {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    top: 40%;
     left: 50%;
-    width: 40%;
+    width: 30%;
     height: auto;
     transform: translate(-50%, -50%);
   }
+
+  .background {
+    z-index: 1;
+    position: absolute;
+  }
+
+  .doll {
+    z-index: 2;
+    position: absolute;
+  }
+
+  .overlay-bottom {
+    z-index: 3;
+    position: absolute;
+  }
   
   .overlay-top {
-    z-index: 2;
+    z-index: 4;
+    position: absolute;
   }
   
-  .overlay-bottom {
-    z-index: 1;
-  }
+
+
+
+
 
 /* Sidebar */
 
 aside {
   background-color: #f4f4f4;
   color: #1A2B43;
-  width: 33%;
+  width: 40%;
   padding: 1rem;
   box-sizing: border-box;
   display: flex;
@@ -173,4 +191,8 @@ aside {
     object-fit: cover;
     cursor: pointer;
     margin-bottom: 0.625rem;
+  }
+
+  .tops img, .bottoms img {
+    vertical-align: top;
   }

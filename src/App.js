@@ -10,12 +10,13 @@ import joshIcon from './images/icons/josh-icon.png';
 // Dolls
 import doll1 from './images/dolls/she.png';
 import doll2 from './images/dolls/he.png';
-import doll3 from './images/dolls/josh.png';
+// import doll3 from './images/dolls/josh.png';
+import doll3 from './images/dolls/josh2.png';
 
 // Empty
 import clear from './images/icons/clear.png'
 import empty from './images/icons/empty.png'
-// import empty from './images/icons/empty2.png'
+import stage from './images/icons/stage.png' // CG
 
 // Sweeney Todd
 import lovettT from './images/sweeney_todd/lovett_top.png';
@@ -126,7 +127,8 @@ const Doll = ({ dollIndex, currentTop, currentBottom }) => {
   console.log(dollIndex)
   return (
     <div className="doll-container">
-      <img className="doll-img background" src={dolls[dollIndex]} alt={`Doll ${dollIndex}`} />
+      <img className="doll-img background" src={stage} alt={"paper doll stage"} />
+      <img className="doll-img doll" src={dolls[dollIndex]} alt={`Doll ${dollIndex}`} />
       <img className="overlay-top overlay" src={currentTop} />
       <img className="overlay-bottom overlay" src={currentBottom} />
     </div>
@@ -183,6 +185,7 @@ const About = () => {
           <li>Select a "doll" icon in the top right.</li>
           <li>Select an "era" from the list to reveal its associated outfits.</li>
           <li>Click a "top" or "bottom" to see it appear on your doll.</li>
+          <li>Click the empty hanger if you want to undo a selection.</li>
           <li>Toggle between eras to mix&amp;match your costumes.</li>
           <li>Explore gender-agnostic styling – just like in a real Small &amp; Casual production!</li>
         </div>
@@ -213,6 +216,9 @@ export default function App() {
   const [currentTop, setCurrentTop] = useState(empty);
   const [currentBottom, setCurrentBottom] = useState(empty);
 
+  // const [currentTop, setCurrentTop] = useState(0);
+  // const [currentBottom, setCurrentBottom] = useState(0);
+
   const [tops, setTops] = useState([]);
   const [bottoms, setBottoms] = useState([]);
 
@@ -236,7 +242,7 @@ export default function App() {
     const natasha_bottoms = [[natashaBicon, natashaB], [pierreBicon, pierreB], [clear, empty]];
 
     const anne_tops = [[anneTicon, anneT], [gilbertTicon, gilbertT], [clear, empty]];
-    const anne_bottoms = [[anneBicon, anneB], [gilbertBicon, gilbertB]];
+    const anne_bottoms = [[anneBicon, anneB], [gilbertBicon, gilbertB], [clear, empty]];
 
     const my_fair_lady_tops = [[elizaTicon, elizaT], [higginsTicon, higginsT], [clear, empty]];
     const my_fair_lady_bottoms = [[elizaBicon, elizaB], [higginsBicon, higginsB], [clear, empty]];
