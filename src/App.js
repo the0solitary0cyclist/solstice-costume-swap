@@ -201,9 +201,7 @@ const About = () => {
         </p>
         <p>Graphical styles vary between outfits <strike>because I was learning Photoshop on the fly</strike> for <i>artistic</i> reasons.</p>
         <p>I count 363 available character stylings (if you count walking around in your skivies, rocking your undershirt, or taking a no-pants subway ride.)</p>
-        <p>
-          This web domain name is available for two years for this and any other Solstice Swap purposes. Just like the changing fashions, it's here for a relatively short, but hopefully enjoyable, time.
-        </p>
+
         <p>Have fun!</p>
         <p>Love &amp; Solstice Light,<br />
           <i>Your Secret Solstice Swapper</i>
