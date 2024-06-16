@@ -140,8 +140,11 @@ font-size: 112%;
     /* top: 50%; */
     top: 40%;
     left: 50%;
-    width: 30%;
-    height: auto;
+    /* width: 30%; */
+    /* height: auto; */
+    height: 75%;
+    min-height: 75%;
+    width: auto;
     transform: translate(-50%, -50%);
   }
 
@@ -165,10 +168,6 @@ font-size: 112%;
     position: absolute;
   }
   
-
-
-
-
 
 /* Sidebar */
 
@@ -223,6 +222,25 @@ aside {
   
     .doll-icons .icon {
       margin-bottom: 0.625rem;
+    }
+
+    /* button.icon { */
+    /* img.doll-icon { */
+      /* width: 20%;
+      height: auto;
+    } */
+
+    div.about {
+      padding-left: .5rem;
+      padding-right: 0px;
+    }
+
+    .doll-img, .overlay {
+      height: auto;
+      max-width: 100%; /* fit available width */
+      max-height: 75vh; /* fit in viewport height */
+      /* min-height: 75%; */
+      /* min-height: 500px;  */
     }
   }
 
