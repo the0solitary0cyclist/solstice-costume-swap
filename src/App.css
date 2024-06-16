@@ -196,3 +196,28 @@ aside {
   .tops img, .bottoms img {
     vertical-align: top;
   }
+
+  @media (max-width: 768px) {
+    header .doll-icon {
+      display: none; /* Hide the header icons on mobile */
+    }
+  
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .doll-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  
+    .doll-icons .icon {
+      margin-bottom: 0.625rem;
+    }
+  }
+
+  
