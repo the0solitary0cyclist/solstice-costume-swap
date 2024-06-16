@@ -32,21 +32,25 @@ footer {
     text-align: center;
  }
 
-.app-header {
+ .app-header {
+  background-color: #1A2B43;
+  color: white;
+  padding: 1rem;
+}
+
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.625rem 1.875rem;
 }
 
 .header-title {
   display: flex;
-  padding-left: 1.25rem;
   align-items: center;
 }
 
 .header-title h1 {
-  padding-left: 1.75rem;
+  margin-left: 1rem;
 }
 
 /* header clickables */
@@ -59,7 +63,8 @@ footer {
 
 .header-icons {
   display: flex;
-  gap: 0.625rem;
+  gap: 0.625rem; /* Space between icons */
+  align-items: center;
 }
 
 button.icon img.doll-icon {
@@ -198,8 +203,9 @@ aside {
   }
 
   @media (max-width: 768px) {
+    /* remove doll images from header & stack in the sidebar for mobile */
     header .doll-icon {
-      display: none; /* Hide the header icons on mobile */
+      display: none;
     }
   
     aside {

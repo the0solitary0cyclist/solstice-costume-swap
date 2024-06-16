@@ -78,15 +78,17 @@ import edwardBicon from './images/twilight/edward_bottoms_icon.png';
 const Header = ({ handleDollChange, handleAboutChange, activeIcon }) => {
   return (
     <header className="app-header">
-      <div className="header-title">
-        <img
-          src={sun}
-          className="header-image icon active"
-          alt="About Icon"
-          title="About"
-          onClick={() => handleAboutChange()}
-        />
-        <h1>Solstice Costume Swap</h1>
+      <div className="header-content">
+        <div className="header-title">
+          <img
+            src={sun}
+            className="header-image icon active"
+            alt="About Icon"
+            title="About"
+            onClick={handleAboutChange}
+          />
+          <h1>Solstice Costume Swap</h1>
+        </div>
         <DollIcons handleDollChange={handleDollChange} activeIcon={activeIcon} />
       </div>
     </header>
@@ -226,7 +228,7 @@ export default function App() {
   const [tops, setTops] = useState([]);
   const [bottoms, setBottoms] = useState([]);
 
-  const size = useWindowSize(); // Use the custom hook to get the window size
+  const size = useWindowSize();
 
   const handleAboutChange = () => {
     setCurrentComponent('about');
@@ -304,7 +306,7 @@ export default function App() {
             )}
           </main>
           <aside>
-            {/* Conditionally render DollIcons based on window size */}
+            {/* remove doll images from header & stack in the sidebar for mobile */}
             {size.width <= 768 ? (
               <DollIcons handleDollChange={handleDollChange} activeIcon={dollIndex} />
             ) : null}
