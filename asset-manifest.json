@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/solstice-costume-swap/static/css/main.5bbe61bb.css",
-    "main.js": "/solstice-costume-swap/static/js/main.e6d408ae.js",
+    "main.js": "/solstice-costume-swap/static/js/main.edcadc33.js",
     "static/js/453.1c8a95af.chunk.js": "/solstice-costume-swap/static/js/453.1c8a95af.chunk.js",
     "static/media/gilbert_bottoms_icon.png": "/solstice-costume-swap/static/media/gilbert_bottoms_icon.214d8457b4ea95299594.png",
     "static/media/gilbert_bottoms.png": "/solstice-costume-swap/static/media/gilbert_bottoms.67cbd319337dca18c68c.png",
@@ -55,11 +55,11 @@
     "static/media/empty.png": "/solstice-costume-swap/static/media/empty.c16a8cb2ecf2e1aaa161.png",
     "index.html": "/solstice-costume-swap/index.html",
     "main.5bbe61bb.css.map": "/solstice-costume-swap/static/css/main.5bbe61bb.css.map",
-    "main.e6d408ae.js.map": "/solstice-costume-swap/static/js/main.e6d408ae.js.map",
+    "main.edcadc33.js.map": "/solstice-costume-swap/static/js/main.edcadc33.js.map",
     "453.1c8a95af.chunk.js.map": "/solstice-costume-swap/static/js/453.1c8a95af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5bbe61bb.css",
-    "static/js/main.e6d408ae.js"
+    "static/js/main.edcadc33.js"
   ]
 }
