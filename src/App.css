@@ -263,6 +263,10 @@ aside {
     padding-right: 0px;
   }
 
+  .help {
+    font-size: 90%; /* Adjusted for smaller screens */
+  }
+
   .doll-img, .overlay {
     height: auto;
     max-width: 100%; /* fit available width */

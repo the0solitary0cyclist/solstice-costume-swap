@@ -188,7 +188,7 @@ const Sidebar = ({ tops, handleTopChange, bottoms, handleBottomChange, handleEra
 
 const About = () => {
   return (
-    <div className="info-section">
+    <div className="info-section about">
       <h1>About this app</h1>
       <div>
         <h3>Welcome, SarahEmily &amp; friends!</h3>
@@ -227,10 +227,10 @@ const About = () => {
 
 const Help = () => {
   return (
-    <div className="info-section">
+    <div className="info-section help">
       <h1>Troubleshooting</h1>
       <div>
-      <div className="instructions">
+        <div className="instructions">
         <h3>Trouble in River City?</h3>
         <h4>You're in the wrong musical. <br />Don't worry, I have some tips.</h4>
         <h4><i>If the layout looks funny:</i></h4>
