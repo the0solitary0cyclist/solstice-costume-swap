@@ -188,7 +188,7 @@ const Sidebar = ({ tops, handleTopChange, bottoms, handleBottomChange, handleEra
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="info-section">
       <h1>About this app</h1>
       <div>
         <h3>Welcome, SarahEmily &amp; friends!</h3>
@@ -227,7 +227,7 @@ const About = () => {
 
 const Help = () => {
   return (
-    <div className="help">
+    <div className="info-section">
       <h1>Troubleshooting</h1>
       <div class="instructions">
         <h3>Trouble in River City?</h3>
@@ -246,6 +246,7 @@ const Help = () => {
       </div>
   );
 };
+
 
 export default function App() {
 
