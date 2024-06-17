@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/solstice-costume-swap/static/css/main.5bbe61bb.css",
-    "main.js": "/solstice-costume-swap/static/js/main.edcadc33.js",
+    "main.css": "/solstice-costume-swap/static/css/main.89b30bb7.css",
+    "main.js": "/solstice-costume-swap/static/js/main.08f963ce.js",
     "static/js/453.1c8a95af.chunk.js": "/solstice-costume-swap/static/js/453.1c8a95af.chunk.js",
     "static/media/gilbert_bottoms_icon.png": "/solstice-costume-swap/static/media/gilbert_bottoms_icon.214d8457b4ea95299594.png",
     "static/media/gilbert_bottoms.png": "/solstice-costume-swap/static/media/gilbert_bottoms.67cbd319337dca18c68c.png",
@@ -14,17 +14,17 @@
     "static/media/eliza_top.png": "/solstice-costume-swap/static/media/eliza_top.fb37615a236431fc80ec.png",
     "static/media/josh2.png": "/solstice-costume-swap/static/media/josh2.18136f076d6f07e754a2.png",
     "static/media/she.png": "/solstice-costume-swap/static/media/she.4abca385d33e0e0995bc.png",
-    "static/media/edward_bottoms.png": "/solstice-costume-swap/static/media/edward_bottoms.b8cf083240bc7d3cad96.png",
+    "static/media/edward_bottoms.png": "/solstice-costume-swap/static/media/edward_bottoms.55266f160c6ee07a6828.png",
     "static/media/edward_bottoms_icon.png": "/solstice-costume-swap/static/media/edward_bottoms_icon.90391c06da0b326d58d6.png",
     "static/media/bella_top.png": "/solstice-costume-swap/static/media/bella_top.edbaab81ab6433547a8c.png",
     "static/media/bella_top_icon.png": "/solstice-costume-swap/static/media/bella_top_icon.df4e7237e7e88adad0cc.png",
     "static/media/sweeney_top.png": "/solstice-costume-swap/static/media/sweeney_top.9377359acaac466a3e5f.png",
     "static/media/sweeney_top_icon.png": "/solstice-costume-swap/static/media/sweeney_top_icon.db188476e674156d4140.png",
-    "static/media/bella_bottoms.png": "/solstice-costume-swap/static/media/bella_bottoms.539c348f8afaf37b636b.png",
+    "static/media/bella_bottoms.png": "/solstice-costume-swap/static/media/bella_bottoms.713c4d6d5de4c3915db2.png",
     "static/media/bella_bottoms_icon.png": "/solstice-costume-swap/static/media/bella_bottoms_icon.94571ecaf16632d96c7d.png",
     "static/media/higgins_top.png": "/solstice-costume-swap/static/media/higgins_top.d38dc2b7ff48a6ce12b8.png",
     "static/media/higgins_top_icon.png": "/solstice-costume-swap/static/media/higgins_top_icon.9d15bd01fe8803802349.png",
-    "static/media/edward_top.png": "/solstice-costume-swap/static/media/edward_top.66acbae091572c9eec26.png",
+    "static/media/edward_top.png": "/solstice-costume-swap/static/media/edward_top.d4dc762edc5b26db2b99.png",
     "static/media/edward_top_icon.png": "/solstice-costume-swap/static/media/edward_top_icon.ade640935496e325d46f.png",
     "static/media/lovett_bottoms.png": "/solstice-costume-swap/static/media/lovett_bottoms.aa1ae9f6c6266e5d577c.png",
     "static/media/lovett_bottoms_icon.png": "/solstice-costume-swap/static/media/lovett_bottoms_icon.2eb9b279a1cd73a2e5b1.png",
@@ -54,12 +54,12 @@
     "static/media/clear.png": "/solstice-costume-swap/static/media/clear.76adcd18c6a758a260f2.png",
     "static/media/empty.png": "/solstice-costume-swap/static/media/empty.c16a8cb2ecf2e1aaa161.png",
     "index.html": "/solstice-costume-swap/index.html",
-    "main.5bbe61bb.css.map": "/solstice-costume-swap/static/css/main.5bbe61bb.css.map",
-    "main.edcadc33.js.map": "/solstice-costume-swap/static/js/main.edcadc33.js.map",
+    "main.89b30bb7.css.map": "/solstice-costume-swap/static/css/main.89b30bb7.css.map",
+    "main.08f963ce.js.map": "/solstice-costume-swap/static/js/main.08f963ce.js.map",
     "453.1c8a95af.chunk.js.map": "/solstice-costume-swap/static/js/453.1c8a95af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bbe61bb.css",
-    "static/js/main.edcadc33.js"
+    "static/css/main.89b30bb7.css",
+    "static/js/main.08f963ce.js"
   ]
 }
