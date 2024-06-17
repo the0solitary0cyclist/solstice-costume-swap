@@ -266,7 +266,12 @@ aside {
       height: auto;
     }
 
-    div.about div.help {
+    div.about {
+      padding-left: .5rem;
+      padding-right: 0px;
+    }
+
+    div.help {
       padding-left: .5rem;
       padding-right: 0px;
     }
