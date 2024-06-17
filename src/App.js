@@ -229,7 +229,8 @@ const Help = () => {
   return (
     <div className="info-section">
       <h1>Troubleshooting</h1>
-      <div class="instructions">
+      <div>
+      <div className="instructions">
         <h3>Trouble in River City?</h3>
         <h4>You're in the wrong musical. <br />Don't worry, I have some tips.</h4>
         <h4><i>If the layout looks funny:</i></h4>
@@ -244,6 +245,7 @@ const Help = () => {
           <p><b>Feel free to report bugs once my identity is revealed!</b></p>
         </div>
       </div>
+    </div>
   );
 };
 
