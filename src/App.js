@@ -142,6 +142,14 @@ const Doll = ({ dollIndex, currentTop, currentBottom }) => {
   );
 };
 
+const InfoLinks = ({setCurrentComponent}) => {
+  return (
+    <div className="sidebar-links">
+    <a className="sidebar-link about-link" onClick={() => setCurrentComponent('about')}>About</a>
+    <a className="sidebar-link help-link"  onClick={() => setCurrentComponent('help')}>Help</a>
+  </div>
+  );
+}
 const Sidebar = ({ tops, handleTopChange, bottoms, handleBottomChange, handleEraChange, eraIndex }) => {
   return (
     <div className="sidebar">
@@ -217,7 +225,32 @@ const About = () => {
   );
 };
 
+const Help = () => {
+  return (
+    <div className="help">
+      <h1>Troubleshooting</h1>
+      <div class="instructions">
+        <h3>Trouble in River City?</h3>
+        <h4>You're in the wrong musical. <br />Don't worry, I have some tips.</h4>
+        <h4><i>If the layout looks funny:</i></h4>
+        <p>This app isn't perfectly responsive. Not gonna lie; it's best viewed in your desktop browser.<br /> 
+        Is it mobile-friendly? Kinda! Turn your phone 90 degrees, maybe? Sorry about that.<br /> 
+        If you see Josh Groban jump into the header, no you didn't.</p>
+        <h4><i>If there are images missing:</i></h4>
+          <p>Try clearing your cache. You only have to clear images, not your whole browsing history.<br />
+          In Chrome, press Ctrl + Shift + Delete simultaneously and check the "cached images and files" checkbox.</p>
+          <h4><i>When in doubt, please refresh the page.</i></h4>
+          <p>Good life advice, really.</p>
+          <p><b>Feel free to report bugs once my identity is revealed!</b></p>
+        </div>
+      </div>
+  );
+};
+
 export default function App() {
+
+  const size = useWindowSize();
+
   const [dollIndex, setDollIndex] = useState(0);
   const [eraIndex, setEraIndex] = useState(0);
   const [currentTop, setCurrentTop] = useState(empty);
@@ -226,7 +259,21 @@ export default function App() {
   const [tops, setTops] = useState([]);
   const [bottoms, setBottoms] = useState([]);
 
-  const size = useWindowSize();
+  let componentToRender;
+
+  switch (currentComponent) {
+    case 'doll':
+      componentToRender = <Doll dollIndex={dollIndex} currentTop={currentTop} currentBottom={currentBottom} />;
+      break;
+    case 'about':
+      componentToRender = <About />;
+      break;
+    case 'help':
+      componentToRender = <Help />;
+      break;
+    default:
+      componentToRender = <About />;
+  }
 
   const handleAboutChange = () => {
     setCurrentComponent('about');
@@ -296,21 +343,23 @@ export default function App() {
       <Header handleDollChange={handleDollChange} handleAboutChange={handleAboutChange} activeIcon={dollIndex} />
       <div className="content">
         <div className="container">
-          <main>
-            {currentComponent === 'doll' ? (
-              <Doll dollIndex={dollIndex} currentTop={currentTop} currentBottom={currentBottom} />
-            ) : (
-              <About />
-            )}
-          </main>
+        <main>
+          {currentComponent !== 'doll' ? (
+            componentToRender
+          ) : (
+            <Doll dollIndex={dollIndex} currentTop={currentTop} currentBottom={currentBottom} />
+          )}
+        </main>
           <aside>
+          < InfoLinks setCurrentComponent={setCurrentComponent} />
             {/* remove doll images from header & stack in the sidebar for mobile */}
             {size.width <= 768 ? (
               <DollIcons handleDollChange={handleDollChange} activeIcon={dollIndex} />
             ) : null}
             <Sidebar
-              tops={tops}
+              setCurrentComponent={setCurrentComponent}
               eraIndex={eraIndex}
+              tops={tops}
               handleTopChange={handleTopChange}
               bottoms={bottoms}
               handleBottomChange={handleBottomChange}

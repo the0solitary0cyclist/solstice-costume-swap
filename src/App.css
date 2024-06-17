@@ -116,7 +116,7 @@ main {
     align-items: center;
   }
   
-.about {
+.about .help {
 color: #1A2B43;
 padding-left: 3rem;
 padding-right: 2rem;
@@ -181,8 +181,29 @@ aside {
   flex-direction: column;
 }
 
+.sidebar-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.sidebar-link {
+  color: #1A2B43;;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  font-weight: bold;
+}
+
+.era:hover {
+  font-weight: bold;
+}
+
 .era {
   margin-bottom: 0.625rem;
+  cursor: pointer;
 }
 
 .era.active {
@@ -201,6 +222,16 @@ aside {
     vertical-align: top;
   }
 
+  /* @media (max-width: 759px) and (max-height: 340px),
+       (max-width: 515px) and (max-height: 309px) { */
+  @media (max-width: 759px),
+       (max-width: 515px){
+  /* escape the doll container a bit less often */
+  .doll-img, .overlay {
+    top: 55%;
+  }
+ }
+
   @media (max-width: 768px) {
     /* remove doll images from header & stack in the sidebar for mobile */
     header .doll-icon {
@@ -212,7 +243,13 @@ aside {
       flex-direction: column;
       align-items: center;
     }
-  
+
+    .sidebar-links {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
     .doll-icons {
       display: flex;
       flex-direction: column;
@@ -224,13 +261,12 @@ aside {
       margin-bottom: 0.625rem;
     }
 
-    /* button.icon { */
-    /* img.doll-icon { */
-      /* width: 20%;
+    button.icon img.doll-icon {
+      width: 2rem;
       height: auto;
-    } */
+    }
 
-    div.about {
+    div.about div.help {
       padding-left: .5rem;
       padding-right: 0px;
     }
