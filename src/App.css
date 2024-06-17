@@ -264,7 +264,8 @@ aside {
   }
 
   .help {
-    font-size: 90%; /* Adjusted for smaller screens */
+    background-color: red;
+    font-size: 85%;
   }
 
   .doll-img, .overlay {
